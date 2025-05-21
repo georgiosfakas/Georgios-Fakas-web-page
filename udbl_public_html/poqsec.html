@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+
+  <title>POQSEC</title>
+
+  <style type="text/css" media="screen">
+@import url(http://user.it.uu.se/~udbl/uu_css/maincss.css);
+  </style>
+  <link rel="stylesheet" type="text/css" media="print"
+ href="http://user.it.uu.se/%7Eudbl/uu_css/print.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Tore Risch">
+</head>
+
+<body class="lightgrey">
+<div id="leftcolumn"><a href="http://www.uu.se"><img
+ src="http://user.it.uu.se/%7Eudbl/uu_img/uulogo_lightgrey.gif"
+ alt="Uppsala universitet" height="160" width="160"></a>
+<div class="hide"><a href="#maincontent" title="Hoppa över länkar"
+ accesskey="2">Hoppa över länkar</a></div>
+
+<p><a href="http://www.it.uu.se/?lang=en"><b>Information
+Technology</b></a> <p><a
+href="http://www.it.uu.se/research/group/udbl"><b>UDBL Home</b></a>
+</p> <p> 
+<a href="http://user.it.uu.se/%7Eudbl/members.html">People</a> <br> 
+<a href="http://user.it.uu.se/%7Eudbl/research.html">Research</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/publications.html">Publications</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/Theses/">Theses</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/positions.html">Openings</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/master.html">Master Projects</a> <br> 
+<a href="http://user.it.uu.se/%7Etorer">Contact</a> <br>
+<a href="http://user.it.uu.se/%7Eudbl/amos">Amos II</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/amos/wrappers.html">Wrappers</a> </p>
+</div>
+
+<div id="maincontent">
+                    <h2> Parallel Object Query System for Expensive
+Computations (POQSEC) </h2>
+<p> This work was funded by <a
+ href="http://www.vr.se/">the Swedish Research Council</a>.                     <h3> <a name="description">Project description</a>
+                    </h3>
+                    <p> Exceptionally large amounts of distributed data
+and computational resources will be available through the GRID. Many
+modern applications within, e.g. engineering, bioinformatics,
+neuroscience, music, space physics, etc. require scalable data access.
+They also require representation of not only traditional tabular
+databases but also other data representations, such as numerical data
+structures. Very demanding and memory-intensive computations need to be
+done over these large amounts of data. Another important issue is that
+it that the user should be able to transparently utilize the resources
+required for an analysis without having to manually partition data
+access and computations.</p>
+                    <p>The goal of this project is to achieve high
+performance for scientific queries utilizing the operational Grid
+infrastructure <a href="http://www.nordugrid.org/">NorduGrid</a>.&nbsp;
+A data manager and customizable query processor is being developed that
+allows transparent and efficient execution of database queries
+utilizing NorduGrid. The exections can access data from storage
+elements and wrapped external systems on the Grid.&nbsp; The system
+will have support for customizable data representations, allow
+user-defined long-running distributed computations in queries, and
+access
+conventional relational databases. It will process application specific
+code
+on both local data and data distributed through the Grid.<br>
+                    <br>
+                    <a href="http://www.nordugrid.org/">NorduGrid</a>&nbsp;is
+a distributed peer oriented Grid middleware system that does not rely
+on
+a central broker. Computer clusters accessed through NorduGrid have
+certain restrictions with respect to resource allocation,
+communication, and process management that the POQSEC architecture must
+cope with and this influences its architecture. </p>
+                    <p> The POQSEC data manager and query processor
+scales up by utilizing the Grid to transparently and dynamically
+incorporate new nodes and clusters for the combined processing of data
+and computations as the database and application demands grow.
+Conventional databases and file-based Grid storage elements are used as
+back-ends for data repositories. Extensible and object-oriented query
+processing and rewrite techniques are used to efficiently combine
+distributed data and computations in this environment.</p>
+                    <p> </p>
+                    <p> The POQSEC prototype being developed uses as
+test cases data and queries from Particle Physics where large amounts
+of data describing
+particle events are produced by proton-proton collisions. The queries
+involve
+regular data comparisons and aggregation operators along with user
+defined
+filter operations in terms C++ based computational libraries, e.g. the <a
+ href="http://root.cern.ch/">ROOT library</a>. A single such analysis
+of
+a single dataset of size 1 million events often takes more than 1 hour
+to
+execute on a single machine. Thus, the processing needs to scale up to
+cover
+all distributed data produced by LHC.&nbsp;</p>
+                    <p> POQSEC utilizes the <a
+ href="http://user.it.uu.se/%7Eudbl/amos/">AMOS II</a> database
+management system that provides object-relational DBMS functionality,
+peer to peer communication, declarative query language <a
+ href="http://user.it.uu.se/%7Eudbl/amos/doc/amos_users_guide.html">AmosQL</a>,
+and interfaces to C++ and Java. The kernel is being extended in order
+to implement the architecture. </p>
+                    <h3> <a name="resources">Resources</a> </h3>
+                    <p>We use various computational resources to test
+and evaluate our system prototypes. Most of them are provided by <a
+ href="http://www.snic.vr.se/">Swedish National Infrastructures for
+Computing
+(SNIC)</a> namely <a href="http://www.swegrid.se/">Swegrid</a>, <a
+ href="http://www.hpc2n.umu.se/">HPC2N</a>, and <a
+ href="http://www.uppmax.uu.se/">UPPMAX</a> resources. We use also
+other resources
+available through <a href="http://www.nordugrid.org/">NorduGrid</a>,
+mostly
+located in Sweden, Danmark, Finland, and Norway. </p>
+                    <h3> <a name="publications">Publications</a> </h3>
+                    <ul class="normal">
+
+<li>R.Fomkin and T.Risch: <b>Cost-based Optimization of Complex
+Scientific Queries</b>, Accepted for publication at <a
+href="http://ssdbm2007.cpsc.ucalgary.ca/"><i> 19th International
+Conference on Scientific and Statistical Database Management (SSDBM
+2007) </i></a>, Banff, Canada, July 9-11, 2007,
+<p>
+                      <li>R.Fomkin and T.Risch: <b>Framework for
+Querying Distributed Objects
+Managed by a Grid Infrastructure</b>, <i>1st International Workshop on
+Data Management in Grids (DMG'05)</i>, Trondheim, Norway, September
+2-3,
+2005.</li>
+<p>
+                      <li>R.Fomkin and T.Risch: <a
+ href="http://user.it.uu.se/%7Etorer/publ/ManagingLQ-GADA.pdf"><b>Managing
+Long Running Queries in Grid Environment</b></a>, <a
+ href="http://laurel.datsi.fi.upm.es/GADA04/"><i>1st Intl. Workshop on
+GRID Computing and its Applications to Data Analysis (GADA'04)</i></a>,
+Lacarna, Cyprus, Oct. 2004, in R. Meersman et al. (Eds.): <i>OTM
+Workshops 2004</i>, LNCS 3292, pp. 99&#8211;110, 2004</li>
+                    </ul>
+                    <h3> <a name="people">People</a> </h3>
+                    <p>Responsible for this project is <a
+ href="http://user.it.uu.se/%7Etorer/">Tore Risch</a>. It is &nbsp;the
+basis for the PhD work of <a href="http://user.it.uu.se/%7Eruslan">Ruslan
+Fomkin</a>. </p>
+                    <h3> <a name="acknowledgments">Acknowledgments</a>
+                    </h3>
+                    We
+would like to thank Christian Hansson and professor Tord Ekel�f
+from <a href="http://www.isv.uu.se/">the department of Radiation
+Science</a>, Uppsala University, for providing the Particle Physics
+analysis application and data as system test cases. The secure
+communication is implemented by Mehran Ahsant from <a
+ href="http://www.pdc.kth.se/">Center for Parallel Computers</a>, Royal
+Institute of Technology, Stockholm. The support from the NorduGrid
+project and from �ke Sandgren (<a href="http://www.hpc2n.umu.se/">HPC2N</a>)
+and Tore Sundqvist (<a href="http://www.uppmax.uu.se/">UPPMAX</a>) is
+significant for the system implementation and testing. </p>
+                    <hr>
+                    <p><!--webbot bot="Timestamp" S-Type="REGENERATED" S-Format="%d/%m/%Y" startspan --><!--webbot bot="Timestamp" endspan i-checksum="12634" -->Last
+update: 24/03/2005. Responsible: <a
+ href="http://user.it.uu.se/%7Etorer">Tore Risch</a><br>
+Copyright &#169; 2005 Uppsala University, Department of Information
+Technology <font face="verdana" size="-2">&nbsp;</font>
+</div>
+</body>
+</html>

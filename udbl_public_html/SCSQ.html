@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+
+  <title>SCSQ</title>
+
+  <style type="text/css" media="screen">
+@import url(http://user.it.uu.se/~udbl/uu_css/maincss.css);
+  </style>
+  <link rel="stylesheet" type="text/css" media="print"
+ href="http://user.it.uu.se/%7Eudbl/uu_css/print.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Tore Risch">
+</head>
+
+<body class="lightgrey">
+<div id="leftcolumn"><a href="http://www.uu.se"><img
+ src="http://user.it.uu.se/%7Eudbl/uu_img/uulogo_lightgrey.gif"
+ alt="Uppsala universitet" height="160" width="160"></a>
+<div class="hide"><a href="#maincontent" title="Hoppa över länkar"
+ accesskey="2">Hoppa över länkar</a></div>
+
+<p><a href="http://www.it.uu.se/?lang=en"><b>Information
+Technology</b></a> <p><a
+href="http://www.it.uu.se/research/group/udbl"><b>UDBL Home</b></a>
+</p> <p> 
+<a href="http://user.it.uu.se/%7Eudbl/members.html">People</a> <br> 
+<a href="http://user.it.uu.se/%7Eudbl/research.html">Research</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/publications.html">Publications</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/Theses/">Theses</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/positions.html">Openings</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/master.html">Master Projects</a> <br> 
+<a href="http://user.it.uu.se/%7Etorer">Contact</a> <br>
+<a href="http://user.it.uu.se/%7Eudbl/amos">Amos II</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/amos/wrappers.html">Wrappers</a> </p>
+</div>
+
+<div id="maincontent">
+                    <h2>SCSQ - SuperComputer Stream Query processor<br>
+                    </h2>
+This work was funded by <a
+href="http://www.vinnova.se/en">VINNOVA</a>, <a
+href="http://www.stratresearch.se/">SSF</a>, and <a
+href="http://www.astron.nl/"> ASTRON</a>.<br>
+                    <br>
+                    <p>Instruments, such as radio telescopes,
+colliders, sensor networks,
+loggers, and simulators generate very high volumes of
+data streams that scientists, engineers, and monitoring systems analyze
+to detect and understand physical phenomena. The data volume in these
+data streams is often very high and there is need for advanced
+computations on the streams. This requires substantial hardware
+resources and scalable stream processing. </p>
+                    <p>We address these challenges by developing a data
+stream management
+system SCSQ (pronounced 'sisque', Supercomputer Stream Query processor)
+which is a Data Stream Management System (DSMS) that enables queries
+over high-volume distributed streams. We have developed a SCSQ
+prototype that runs on a variety of hardware platforms, from Windows to
+IBM BlueGene massively parallel computers. SCSQ enables high level
+specification of distributed stream queries
+involving advanced computations in such heterogeneous communication and
+computation environments. SCSQ queries filter, transform, and join data
+from different kinds of distributed streaming data sources. </p>
+                    <p>An important target application for the SCSQ
+technology was <a href="http://www.lofar.org/">LOFAR</a>, a large
+digital
+radio telescope being developed in the Netherlands. An antenna array
+distributed over the Netherlands and Germany produces massive amounts
+of data which is streamed through heterogeneous cluster computers that
+include Linux clusters and a 12000 nodes IBM Bluegene. SCSQ runs in
+this massively parallel and heterogeneous computing
+environment. SCSQ optimizes and executes data stream queries from
+digital receivers of the LOFAR space radio signals. <br>
+                    </p>
+                    <p></p>
+                    <p><span
+ style="font-weight: bold; color: rgb(255, 0, 0);"></span><span
+ style="color: rgb(255, 0, 0);"><span style="font-weight: bold;"></span></span>The
+SCSQ prototype has been
+evaluated using
+the <a href="http://www.cs.brandeis.edu/%7Elinearroad/">Linear Road
+Benchmark</a>, which is a simulation of a toll expressway system
+producing data streams to be processed by a data stream management
+system. The implementation is called <a
+ href="http://user.it.uu.se/%7Eudbl/lr.html">SCSQ-LR</a>.<br>
+                    </p>
+                    <p><span style="color: rgb(255, 0, 0);"><span
+ style="font-weight: bold;"></span></span>The SCSQ prototype is being
+further developed in the <a
+ href="http://user.it.uu.se/%7Eudbl/iStreams.html">iStreams</a> project
+where data stream management techniques are applied on searching and
+analyzing industrial streams.<br>
+                    </p>
+
+<p><span style="color: rgb(255, 0, 0);"><span style="font-weight:
+bold;">New:</span> </span>The massively scalable parallel
+implementation of Linear Road SCSQ-PLR now is network bound and
+achieves orders of magnitude improved scalability (L>512) over any
+previously published results for the Linear Road Benchmark:<br>
+                    </p>
+
+
+<p>E.Zeitler and T.Risch: <a
+href="http://user.it.uu.se/~udbl/publ/VLDB2011.pdf"><b>Massive
+scale-out of expensive continuous queries</b></a>, presented at <a
+href="http://www.vldb.org/2011/">37th International Conference on Very
+Large Databases, VLDB 2011</a>, in <i>Proceedings of the VLDB
+Endowment</i>, Vol. 4, No. 11, 2011.
+
+                    <p>E. Zeitler and T.Risch: <a href="http://user.it.uu.se/%7Eudbl/publ/DASFAA2010.pdf"><b>Scalable Splitting
+of Massive Data Streams</b></a>, in <a
+ href="http://dasfaa2010.cs.tsukuba.ac.jp/index.html"><i>Proc. 15th
+Conf. on Database Systems for Advanced Application, DASFAA 2010.</i></a>,
+Tokyo, Japan, 1-4 April, 2010 (<a
+ href="http://user.it.uu.se/%7Eudbl/publ/DASFAA2010.pdf">abstract</a>).</p>
+                    <p> </p>
+                    <p> <span style="font-weight: bold;">Publications</span><br>
+                    </p>
+
+<p>There first overview of the SCSQ project was made in: </p>
+                    <ul>
+                      <li>E.Zeitler and T.Risch: <a
+ href="http://user.it.uu.se/%7Eudbl/publ/ICDEWS2006.pdf"><b>Processing
+high-volume stream queries on a supercomputer</b></a>, <i>ICDE Ph.D. Workshop 2006</i>,
+Atlanta,
+GA, April 2006</li>
+                    </ul>
+<p>
+The following paper shows how the flexibility of the SCSQ query
+language (SCSQL, pronounced 'Siskel') can be used for investigating
+the performance of a heterogeneous and massively parallel computer
+environment:
+
+                    <ul>
+
+<li>E.Zeitler and T.Risch: <a
+href="http://user.it.uu.se/~udbl/publ/DEPSA2007.pdf"><b>Using stream
+queries to measure communication performance of a parallel computing
+environment.</b> </a>Presented at <a
+href="http://www.cs.uga.edu/%7Elaks/depsa/"><i>First International
+Workshop on Distributed Event Processing, Systems and Applications
+(DEPSA)</i></a>, Toronto, Canada, June 29, 2007. </li>
+                    </ul>
+                    <p>SCSQ was applied on large scale collective
+traffic systems in: </p>
+                    <ul>
+
+<li> G.Gidofalvi, T.B. Pedersen, T.Risch, and E.Zeitler: <a
+href="http://user.it.uu.se/~udbl/publ/TaxiEDBT2008.pdf"><b>Highly
+Scalable Trip Grouping for Large Scale Collective Transportation
+Systems</b><a>, <i>Proc. 11th International
+Conference on Extending Database Technology, EDBT 2008 </i>,
+Nantes, France, March 2008.</li>
+                    </ul>
+
+                    <p><br>
+There are popular presentations in <a
+ href="publ/ASTRONNewsletter-2006-June.pdf">ASTRON
+News</a> and <a
+ href="http://www.esa.int/esaCP/SEMQLPVLWFE_Sweden_0.html">European
+Space Agency in Sweden</a>. </p>
+                    <p><br>
+                    <span style="font-weight: bold;">People</span><br>
+                    </p>
+                    <p>Responsible for this project is <a
+ href="http://user.it.uu.se/%7Etorer/">Tore Risch</a>. It is the basis
+for the PhD work of <a href="http://www.it.uu.se/katalog/zeitler">Erik
+Zeitler</a>.<br>
+                    </p>
+                    <font face="verdana" size="-2">&copy; 2007 Uppsala
+Universitet, Department
+of Information Technology, Box 337, 751 05 Uppsala, Sweden | This page
+is maintained by <a href="http://user.it.uu.se/%7Etorer">Tore
+Risch</a> </font>
+</div>
+</body>
+</html>

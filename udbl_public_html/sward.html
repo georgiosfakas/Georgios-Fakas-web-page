@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+
+    <title>SWARD</title>
+
+  <style type="text/css" media="screen">
+@import url(http://user.it.uu.se/~udbl/uu_css/maincss.css);
+  </style>
+  <link rel="stylesheet" type="text/css" media="print"
+ href="http://user.it.uu.se/%7Eudbl/uu_css/print.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Tore Risch">
+</head>
+
+<body class="lightgrey">
+<div id="leftcolumn"><a href="http://www.uu.se"><img
+ src="http://user.it.uu.se/%7Eudbl/uu_img/uulogo_lightgrey.gif"
+ alt="Uppsala universitet" height="160" width="160"></a>
+<div class="hide"><a href="#maincontent" title="Hoppa över länkar"
+ accesskey="2">Hoppa över länkar</a></div>
+
+<p><a href="http://www.it.uu.se/?lang=en"><b>Information
+Technology</b></a> <p><a
+href="http://www.it.uu.se/research/group/udbl"><b>UDBL Home</b></a>
+</p> <p> 
+<a href="http://user.it.uu.se/%7Eudbl/members.html">People</a> <br> 
+<a href="http://user.it.uu.se/%7Eudbl/research.html">Research</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/publications.html">Publications</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/Theses/">Theses</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/positions.html">Openings</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/master.html">Master Projects</a> <br> 
+<a href="http://user.it.uu.se/%7Etorer">Contact</a> <br>
+<a href="http://user.it.uu.se/%7Eudbl/amos">Amos II</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/amos/wrappers.html">Wrappers</a> </p>
+</div>
+
+<div id="maincontent">
+			      <h2>SWARD - Semantic Web Abridged Relational Databases</h2>
+			      <br>
+<p>
+This work is funded by the IST project <a
+href="http://www.egov-bus.org">EGovBus</a>.</p>
+<p>
+The SWARD system provides semantic web representations using <a
+href="http://www.w3.org/RDF/">RDF</a> and RDF Schema of data stored in
+conventional relational databases For a given relational database the
+user defines a wrapper that exports chosen parts of the database as a
+view in terms of the RDF meta-data model. The exported view can be
+queried using either SQL or one of the RDF-oriented query languages SparQL and RDQL. The
+RDF-view of a relational database is automatically generated from two
+simple mapping tables in SWARD that, for a given ontology, map tables
+to classes and columns to properties.
+</p>
+<p>
+Using SWARD, we are developing a virtual repository system that
+enables scalable SQL queries to RDF views of large relational
+databases storing Government documents and life event data. This
+provides very flexible searchable views of wrapped relational
+databases. Using the RDF-model both relational meta-data (schema) and
+stored data can be queried.  By providing meta-data, queries, and
+results using basic semantic web representations such as RDF-Schema
+the system provides scalable access to large eGovernment repositories
+from advanced tools that need high-level semantic descriptions of
+integrated information.</p>
+<p>
+An RDF view of a relational database is defined as a large disjunctive
+query. Optimization of queries to large disjunctive views is
+challenging and makes it critical to optimize not only data access
+time but also the time to perform the query optimization itself. We
+have developed novel query optimization techniques based on query
+rewrites and compile time evaluation of subexpressions that enables
+execution of real-world queries to RDF views of relational databases.
+<p>
+There is a more detailed overview of the SWARD system <a
+href="http://user.it.uu.se/~udbl/sward/SWARD.pdf">here</a>. You can
+download and test SWARD by clicking <a
+href="http://udbl.it.uu.se/dl.php?what=sward">here</a>.</p>
+
+<font
+face="verdana" size="-2">&copy; 2007 Uppsala Universitet, Department
+of Information Technology, Box 337, 751 05 Uppsala, Sweden | This page
+is maintained by <a href="http://user.it.uu.se/%7Etorer">Tore
+Risch</a> </font>
+</div>
+</body>
+</html>

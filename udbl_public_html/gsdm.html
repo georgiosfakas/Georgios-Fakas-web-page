@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+
+  <title>GSDM</title>
+             
+
+  <style type="text/css" media="screen">
+@import url(http://user.it.uu.se/~udbl/uu_css/maincss.css);
+  </style>
+  <link rel="stylesheet" type="text/css" media="print"
+ href="http://user.it.uu.se/%7Eudbl/uu_css/print.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" content="Tore Risch">
+</head>
+
+<body class="lightgrey">
+<div id="leftcolumn"><a href="http://www.uu.se"><img
+ src="http://user.it.uu.se/%7Eudbl/uu_img/uulogo_lightgrey.gif"
+ alt="Uppsala universitet" height="160" width="160"></a>
+<div class="hide"><a href="#maincontent" title="Hoppa över länkar"
+ accesskey="2">Hoppa över länkar</a></div>
+
+<p><a href="http://www.it.uu.se/?lang=en"><b>Information
+Technology</b></a> <p><a
+href="http://www.it.uu.se/research/group/udbl"><b>UDBL Home</b></a>
+</p> <p> 
+<a href="http://user.it.uu.se/%7Eudbl/members.html">People</a> <br> 
+<a href="http://user.it.uu.se/%7Eudbl/research.html">Research</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/publications.html">Publications</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/Theses/">Theses</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/positions.html">Openings</a><br> 
+<a href="http://user.it.uu.se/%7Eudbl/master.html">Master Projects</a> <br> 
+<a href="http://user.it.uu.se/%7Etorer">Contact</a> <br>
+<a href="http://user.it.uu.se/%7Eudbl/amos">Amos II</a><br>
+<a href="http://user.it.uu.se/%7Eudbl/amos/wrappers.html">Wrappers</a> </p>
+</div>
+
+<div id="maincontent">
+                    <h2>GRID Stream Data Manager (GSDM) </h2>
+                                             
+This project was funded by <a href="http://www.vinnova.se/default____612.aspx">
+Vinnova</a>.
+                    <h3> <a name="description">Project description</a> </h3>
+                                             
+<p>The GRID initiative provides an infrastructure for distributed
+computations among widely distributed high-performance computers.
+This can allow for efficient exchange and processing of very large
+amounts of data. For example for Space Physics applications such as <a
+href="http://www.physics.irfu.se/LOIS/">LOIS</a> and <a
+href="http://www.lofar.org/">LOFAR</a>, the data is often produced in
+real time by large amounts of sensors that receive signals from the
+space. The data is delivered as very large volumne data <i>streams</i>
+over very high-speed network connections. It will not be possible or
+desirable to physically store all produced data in conventional
+storage nodes; an alternative approach is to do as much processing as
+possible over moving windows of the data streams.  On these data
+stream windows various numerical data reduction, stream combination,
+and transformation algorithms are applied in real time before the data
+is further delivered for visualizations, storage, and other
+processing. For example, unusual transients and signal patterns can be
+detected, noise can be removed, and differences between different data
+streams detected. Such data reduction requires customized numerical
+algorithms.</p>
+                     
+<p>GSDM (GRID Stream Data Manager) is a stream oriented data manager
+and customizable query processor being developed at <a
+href="http://user.it.uu.se/%7Eudbl">UDBL</a> that allows very
+efficient execution of database queries accessing distributed
+scientific and other customized data representations using GRID
+technology. The approach is to utilize a number of object-relational
+main-memory database engines running on GRID nodes and connected
+through high-speed networks. We leverage upon high-performance,
+extensible, and object-oriented database technology combined with
+high-performance LANs, WANs, and GRID technology. Applications
+include, e.g., engineering, bioinformatics, neuroscience, and space
+environmental physics. Of particular interest is the development of
+new distributed data population and query processing techniques
+utilizing distributed and scalable data structures for very
+high-performance processing of data from digital space receivers.  The
+architecture allows for including external programs for user-defined
+data computations in stream queries.</p>
+                                           
+<p>The database community has long experience of frameworks for
+optimisation and processing of distributed queries to access large
+volumes of data. However, high volume scientific sensor arrays require
+orders of magnitude better data processing performance than
+conventional database management systems and it also requires support
+for queries involving complex customized numerical computations in
+real time over data streams.<br>
+                     <br>
+An approach to achieve high performance over large data streams is to
+develop a <i>stream data manager</i>, GSDM, running on highly
+connected clusters of main memory database nodes and which is
+extensible through user-defined data representations and computational
+models. The streamed database should scale by being able to
+dynamically incorporate new nodes as the database grows.  Unlike
+conventional databases, stream oriented databases require continuous
+queries (CQs) that continuously deliver result streams once they are
+activated.
+                    <br>
+                     </p>
+                     
+<p>GSDM utilizes the <a href="http://user.it.uu.se/%7Eudbl/amos/">AMOS
+II</a> database management system that provides object-relational DBMS
+functionality, peer to peer communication, declarative query language
+<a
+href="http://user.it.uu.se/%7Eudbl/amos/doc/amos_users_guide.html">AmosQL</a>,
+and interfaces to C and Java. The kernel is being extended and
+modified in order to implement the architecture.<br>
+                    <br>
+                    </p>
+                    <h3> <a name="publications">Publications</a> </h3>
+                                             
+                    <ul class="normal">
+<li><p>M.Ivanova and T.Risch: <a
+href="http://www.it.uu.se/research/reports/2005-012/"><b>Customizable
+Parallel Execution of Scientific Stream Queries</b></a>Technical
+report 2005-012, Department of Information Technology, Uppsala
+University, ISSN 1404-3203, The <a
+href="http://www.vldb2005.org/index.php"><i>31st International
+Conference on Very Large Databases</i></a>, VLDB2005, Trondheim,
+Norway, 2005.</p>
+</li>
+                      <li> 
+                        <p>M.G.Koparanova and T.Risch: <b>High-performance
+Stream-oriented GRID Database Manager for Scientific Data</b>, <i>Proc. 1st
+European Across Grids Conference</i>, Universidad de Santiago de Compostela, 
+Spain, Feb. 13-14, 2003. </p>
+                      </li>
+<li> <p>T,Risch, M.Koparanova, and B.Thide: <a
+href="http://user.it.uu.se/%7Etorer/publ/wdas02.pdf"><b>High
+Performance GRID Database Manager for Scientific Data</b></a>,
+<i>Proc. 4th Distributed Data and Structures, WDAS'03</i>, Paris,
+France, pp 99-106, Carleton Scientific, ISBN 1-894145-13-5, 2002.</p></li>
+<li><p>Milena Ivanova: <a
+href="http://user.it.uu.se/~udbl/Theses/MilenaIvanovaPhD.pdf">
+Scalable Scientific Stream Query Processing</a>
+Uppsala Dissertations from the Faculty of Science and Technology,
+No. 66 ISBN: 91-554-6351-7, Acta Universitatis Upsaliensis, 2005.</p>
+</li>
+
+                    </ul>
+                                             
+                    <p><br>
+ </p>
+                                           
+                    <ul class="normal">
+                                             
+                    </ul>
+                                             
+                    <h3> <a name="people">People</a> </h3>
+                                                           
+                    <p>Responsible for this project is <a
+ href="http://www.it.uu.se/research/group/udbl/"></a>  <a
+ href="http://user.it.uu.se/%7Etorer/">Tore Risch</a>. It was &nbsp;the basis 
+for the PhD work of <a href="http://user.it.uu.se/%7Emilena/">Milena Ivanova</a>.</p>
+                                             
+                    <p></p>
+                     
+                    <hr>                                                
+        
+                    <p><!--webbot bot="Timestamp" S-Type="REGENERATED" S-Format="%d/%m/%Y" startspan --><!--webbot bot="Timestamp" endspan i-checksum="12634" -->Last 
+update:  22/09/2004.  Responsible: <a
+ href="http://user.it.uu.se/%7Etorer">Tore Risch</a><br>
+   Copyright &copy; 2004 Uppsala University, Department of Information Technology 
+ 			    <font face="verdana" size="-2">&nbsp;</font>
+</div>
+</body>
+</html>
